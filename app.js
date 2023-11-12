@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
     console.log(err);
   }
 });
-app.post("/form", upload.single("img"), async (req, res) => {
+app.post("/", upload.single("img"), async (req, res) => {
   try {
     const { name, email, message } = req.body;
     const info = await transporter.sendMail({

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/form.css" />
+    <!-- boxicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-main">
+        <h1>Send Mail</h1>
+        <form action="/form" method="post" enctype="multipart/form-data">
+          <div class="inp-field">
+            <label for="name">Name</label>
+            <input type="text" name="name" />
+          </div>
+          <div class="inp-field">
+            <label for="name">Email</label>
+            <input type="email" name="email" />
+          </div>
+          <div class="inp-field">
+            <label for="name">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              name="message"
+            ></textarea>
+          </div>
+          <div class="second-btn">
+            <button>Submit</button>
+            <div class="file-attachment">
+              <input type="file" name="img" />
+              <div class="file-icon">
+                <i class="bx bx-file"></i>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
